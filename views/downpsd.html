@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+html{
+	background: #000;
+}
+body{
+	width: 960px;
+	border: 1px solid #119;
+	box-shadow: 0px 0px 10px #119;
+	margin:auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+#down{
+	width: 900px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#down a{
+	display: inline-block;
+	text-decoration: none;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid green;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 10px green;
+	color: #fff;
+}
+#down a:hover{
+	color: yellow;
+}
+#down p{
+	margin-top: 10px;
+	color: red;
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+	window.onload=function(){
+		var aa = document.getElementById("returna");
+		aa.onclick=function(){
+			window.history.back(-1);
+		}
+
+	}
+</script>
+<body>
+	<div id="down">
+		<a id="returna">返回继续下载</a>
+		&nbsp;&nbsp;
+		<a href="<%=psdurl%>">点击开始下载</a>
+		<p>PSD是Adobe公司的图形设计软件Photoshop的专用格式，下载后可以直接在ps中进行修改，制作出自己想要的理想图片！</p>
+	</div>
+</body>
+</html>

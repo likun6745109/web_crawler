@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爬虫</title>
+	<link rel="stylesheet" type="text/css" href="/css/sczg.css">
+</head>
+<script type="text/javascript">
+	window.onload=function(){
+		var aa = document.getElementById("returna");
+		aa.onclick=function(){
+			window.history.back(-1);
+		}
+		var downa = document.getElementById("downa")
+		var show = document.getElementById("show")
+		downa.onclick=function(){
+			show.style.display='block'
+		}
+
+	}
+</script>
+<body>
+	<div id="down">
+		<a id="returna">返回</a>
+		&nbsp;&nbsp;
+		<a id="downa" href="/download/sczg">下载</a>
+		<p id="show" style="display: none;">正在打包下载图片，请耐心等待，下载完后将不能重复下载</p>
+	</div>
+	<div id="result">
+			<%img_result.forEach(function(item,index){%>
+				<div class="div1">
+					<div class="div2">
+						<a href="<%=item%>" target="_blank"><img src="<%=item%>" ></a>
+					</div>
+				</div>
+			<%})%>
+	</div>
+</body>
+</html>

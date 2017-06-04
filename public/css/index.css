@@ -1,0 +1,90 @@
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+html{
+	background: #000
+}
+body{
+	width: 960px;
+	border: 1px solid #119;
+	box-shadow: 0px 0px 10px #119;
+	margin:auto;
+}
+#explain{
+	width: 900px;
+	margin:10px auto;
+	color: #fff;
+}
+#explain p{
+	font-size: 18px;
+	line-height: 30px;
+	text-indent: 40px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+#explain p img{
+	width: 600px;
+}
+strong{
+	color: red
+
+}
+#find,#find2{
+	width: 900px;
+	margin:10px auto;
+	border: 1px solid green;
+	box-shadow: 0px 0px 10px green;
+	color: #fff;
+	margin-bottom: 20px;
+}
+#find #findul,#find2 #findul2{
+	list-style: none;
+	padding: 10px;
+}
+#find #findul li,#find2 #findul2 li{
+	list-style: none;
+	text-align: center;
+	line-height: 30px;
+	
+}
+#qtweb,#sczgweb{
+	width: 250px;
+	height: 25px;
+	border:1px solid green;
+	box-shadow: inset 0px 0px 10px green;
+}
+#qtsub,#sczgsub{
+	margin-top: 5px;
+	width: 100px;
+	height: 30px;
+	border:1px solid green;
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 10px green;
+	text-align: center;
+	font-size: 15px;
+}
+#qtsub:hover,#sczgsub:hover{
+	background: yellow;
+}
+#down{
+	width: 900px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#down a{
+	display: inline-block;
+	text-decoration: none;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid green;
+	border-radius: 5px;
+	box-shadow:inset 0px 0px 10px green;
+	color: #fff;
+}
+#down a:hover{
+	color: yellow;
+}

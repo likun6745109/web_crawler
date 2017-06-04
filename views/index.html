@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爬虫</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+</head>
+
+<body>
+<div id="down">
+		<a href="#find">爬取千图网</a>
+		&nbsp;&nbsp;
+		<a href="#find2">爬取素材中国网</a>
+</div>
+<div id="explain">
+	<h3>千图网图片爬取说明</h3>
+	<p>一：当要爬取当前页中所列举的所有图片，请确认网址址已在陈列图片的页面，具体网址是：<strong>http://www.58pic.com/tupian/(haiyangbeijing.html)</strong>，括号部分随图片搜索的内容不同而变化，保证前面<strong>{http://www.58pic.com/}</strong>不错就可爬取该页面展示的所有图片，爬取过程中请耐心等待，一般10秒爬取完成！下载过程中请不要进行其他操作，保证下载顺利进行！
+	<br />
+	示例：爬取海洋背景图片
+	<br />
+	<img src="/images/2.png">
+	
+	</p>
+</div>
+<div id="find">
+	<form method="POST" action="/qiantu/crawler" enctype="multipart/form-data">
+		<ul id="findul">
+			<li>请输入要爬取的千图网网址：<input id="qtweb" type="text" name="qtweburl"></li>
+			<li><input id="qtsub" type="submit" name="" value="提交"></li>
+		</ul>
+	</form>
+</div>
+<div id="explain">
+	<h3>素材中国网图片爬取说明</h3>
+	<p>一：当要爬取当前页中所列举的所有图片，请确认网址址已在陈列图片的页面，具体网址是：<strong>http://so.sccnn.com/search/海/1.html</strong>，括号部分随图片搜索的内容不同而变化，保证前面<strong>{http://www.sccnn.com/}</strong>不错就可爬取该页面展示的所有图片，爬取过程中请耐心等待，一般10秒爬取完成！下载过程中请不要进行其他操作，保证下载顺利进行！
+	素材中国网除图标图片没有psd文件外，其他图片都可以下载psd文件！由于默认设置为下载大图，部分图片没有大图资源，因此有部分图片不能下载！
+	<br />
+	示例：爬取关键词为海的图片
+	<br />
+	<img src="/images/3.png">
+	
+	</p>
+</div>
+<div id="find2">
+	<form method="POST" action="/sczg/crawler" enctype="multipart/form-data">
+		<ul id="findul2">
+			<li>请输入要爬取的素材中国网址：<input id="sczgweb" type="text" name="sczgweburl"></li>
+			<li><input id="sczgsub" type="submit" name="" value="提交"></li>
+		</ul>
+	</form>
+</div>
+</body>
+</html>
